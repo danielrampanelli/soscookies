@@ -3,9 +3,9 @@
 class soscookies {
     
     public static function enqueueStylesAndScripts() {
-        wp_enqueue_style('soscookies-cookieconsent', plugins_url('assets/cookieconsent.css', __DIR__));
+        wp_enqueue_style('soscookies-cookieconsent', plugins_url('assets/cookieconsent.min.css', __DIR__));
         
-        wp_register_script('soscookies-cookieconsent', plugins_url('assets/cookieconsent.js', __DIR__), array(), FALSE, TRUE);
+        wp_register_script('soscookies-cookieconsent', plugins_url('assets/cookieconsent.min.js', __DIR__), array('jquery'), FALSE, TRUE);
         
         wp_enqueue_script('soscookies', plugins_url('scripts/soscookies.js', __DIR__), array('jquery', 'soscookies-cookieconsent'), FALSE, TRUE);
         
@@ -17,6 +17,7 @@ class soscookies {
                 ),
                 'settings' => (object) array(
                     'consenttype' => 'explicit',
+                    'disableallsites' => TRUE,
                 ),
             ),
         ));
