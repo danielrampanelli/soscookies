@@ -24,6 +24,15 @@ class soscookies {
             ),
         );
         
+        $policy = self::option('policy');
+        if (!empty($policy)) {
+            if (defined('icl_object_id') && defined('ICL_LANGUAGE_CODE')) {
+                $policy = (int) icl_object_id($policy, 'page', TRUE, ICL_LANGUAGE_CODE);
+            }
+            
+            $options->settings->privacyPolicy = get_permalink($policy);
+        }
+        
         $types = (array) self::option('cookie_types', array());
         foreach ($types as $type) {
             $options->cookies->{$type} = (object) array();

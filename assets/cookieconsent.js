@@ -562,26 +562,36 @@ var cc =
 			jQuery('head').append('<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">');
 			jQuery('body').html('').css("margin", 0);
 		}
-		data = '<div id="cc-notification">' +
+        
+		data =
+            '<div id="cc-notification">' +
 				'<div id="cc-notification-wrapper">' +
-				'<h2><span>'+cc.strings.notificationTitle+'</span></h2>' +
-				'<div id="cc-notification-permissions">' +
-				'<a id="cc-notification-logo" class="cc-logo" target="_blank" href="http://silktide.com/cookieconsent" title="'+cc.strings.poweredBy+'"><span>'+cc.strings.poweredBy+'</span></a> ' +
+				    '<h2><span>'+cc.strings.notificationTitle+'</span></h2>' +
+				    '<div id="cc-notification-permissions">' +
+				        '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="http://silktide.com/cookieconsent" title="'+cc.strings.poweredBy+'"><span>'+cc.strings.poweredBy+'</span></a> ' +
+			        '</div>' +
+			        '<ul class="cc-notification-buttons">' +
+        				'<li>' +
+        				    '<a class="cc-link" href="http://cookieconsent.silktide.com" id="cc-approve-button-allsites">'+cc.strings.allowForAllSites+'</a>' +
+        				'</li>' +
+        				'<li>' +
+        				    '<a class="cc-link" href="#" id="cc-approve-button-thissite">'+cc.strings.allowCookies+'</a>' +
+        				'</li>' +
+    				'</ul>' +
+    				'<div class="cc-clear"></div>' +
 				'</div>' +
-				'<ul class="cc-notification-buttons">' +
-
-				'<li>' +
-				'<a class="cc-link" href="http://cookieconsent.silktide.com" id="cc-approve-button-allsites">'+cc.strings.allowForAllSites+'</a>' +
-				'</li>' +
-				'<li>' +
-				'<a class="cc-link" href="#" id="cc-approve-button-thissite">'+cc.strings.allowCookies+'</a>' +
-				'</li>' +
-				'</ul>' +
-				'<div class="cc-clear"></div>' +
-				'</div>' +
-				'</div>';
+			'</div>';
 
 			jQuery('body').prepend(data);
+            
+			if(cc.settings.privacyPolicy)
+            {
+                jQuery('ul.cc-notification-buttons').append(
+                    '<li>' +
+                        '<a class="cc-link" href="' + cc.settings.privacyPolicy + '" id="cc-privacy-policy">' + cc.strings.privacyPolicy + '</a>' +
+                    '</li>'
+                );
+            }
 			if(cc.settings.hideallsitesbutton)
 			{
 				jQuery('#cc-approve-button-allsites').hide();
@@ -594,10 +604,6 @@ var cc =
 				jQuery('#cc-approve-button-allsites').hide();
 			}
 			jQuery('#cc-notification-logo').hide();
-			if(cc.settings.privacyPolicy)
-			{
-				jQuery('#cc-notification-moreinformation').prepend('<a href="'+cc.settings.privacyPolicy+'">'+cc.strings.privacyPolicy+'</a> | ');
-			}
 			jQuery('#cc-notification').addClass(cc.settings.style).addClass(cc.settings.bannerPosition);
 			bannerh = jQuery('#cc-notification').height();
 			jQuery('#cc-notification').hide();
