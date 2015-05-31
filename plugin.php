@@ -20,6 +20,8 @@ add_action('after_setup_theme', function() {
 
 add_action('wp_enqueue_scripts', array('soscookies', 'enqueueStylesAndScripts'));
 
+add_action('plugins_loaded', array('soscookies', 'integrateWithYoastGoogleAnalytics'));
+
 add_filter('piklist_admin_pages', array('soscookies', 'adminPages'));
 
 ?>

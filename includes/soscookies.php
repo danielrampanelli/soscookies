@@ -2,6 +2,8 @@
 
 class soscookies {
     
+    private static $yoastGoogleAnalyticsInstance;
+    
     public static function option($name, $default = NULL) {
         $settings = get_option('soscookies_options');
         
@@ -112,6 +114,43 @@ class soscookies {
         	);
         	
         	return $pages;
+    }
+    
+    public static function integrateWithYoastGoogleAnalytics() {
+        if (class_exists('Yoast_GA_Tracking')) {
+            global $wp_filter;
+            
+            if (array_key_exists('8', $wp_filter['wp_head'])) {
+                foreach ($wp_filter['wp_head']['8'] as $entry) {
+                    if (is_array($entry['function']) &&
+                        $entry['function'][0] instanceof Yoast_GA_Tracking &&
+                        $entry['function'][1] == 'tracking') {
+        
+                        self::$yoastGoogleAnalyticsInstance = $entry['function'][0];
+                        
+                        remove_action('wp_head', $entry['function'], 8);
+                        
+                        add_action('wp_head', array('soscookies', 'printYoastGoogleAnalytics'), 8);
+                    }
+                }
+            }
+        }
+    }
+    
+    public static function printYoastGoogleAnalytics() {
+        ob_start();
+        
+        self::$yoastGoogleAnalyticsInstance->tracking();
+        
+        $output = ob_get_clean();
+        
+        $output = str_replace(
+            '<script type="text/javascript">',
+            '<script type="text/plain" class="cc-onconsent-analytics">',
+            $output
+        );
+        
+        echo $output;
     }
     
 }
