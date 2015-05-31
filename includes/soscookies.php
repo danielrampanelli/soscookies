@@ -24,6 +24,19 @@ class soscookies {
         ));
     }
     
+    public static function adminPages($pages) {
+        	$pages[] = array(
+        		'page_title' => _x('SOS Cookies', 'admin', 'soscookies'),
+        		'menu_title' => _x('SOS Cookies', 'admin', 'soscookies'),
+        		'capability' => 'manage_options',
+            'sub_menu' => 'options-general.php',
+        		'menu_slug' => 'soscookies_options',
+        		'setting' => 'soscookies_options',
+        	);
+        	
+        	return $pages;
+    }
+    
 }
 
 ?>
