@@ -1063,6 +1063,11 @@ var cc =
 
 	showminiconsent: function()
 	{
+        if(!cc.settings.tagPosition)
+        {
+            return;
+        }
+        
 		if(jQuery('#cc-tag').length == 0)
 		{
 			data = '<div id="cc-tag" class="cc-tag-'+cc.settings.tagPosition+'"><a class="cc-link" href="#" id="cc-tag-button" title="'+cc.strings.privacySettings+'"><span>'+cc.strings.privacySettings+'</span></a></div>';
