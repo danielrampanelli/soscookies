@@ -14,7 +14,12 @@ License: GPL, Version 3
 
 require_once(__DIR__.'/includes/soscookies.php');
 
+add_action('after_setup_theme', function() {
+    load_plugin_textdomain('soscookies', FALSE, dirname(plugin_basename(__FILE__)).'/languages/');
+});
+
 add_action('wp_enqueue_scripts', array('soscookies', 'enqueueStylesAndScripts'));
+
 add_filter('piklist_admin_pages', array('soscookies', 'adminPages'));
 
 ?>

@@ -13,15 +13,23 @@ class soscookies {
         return $value;
     }
     
-    private static function getPluginOptions() {
-        $options = (object) array(
-            'cookies' => (object) array(),
-            'settings' => (object) array(
-                'consenttype' => self::option('consent_type', 'explicit'),
-                'clickAnyLinkToConsent' => TRUE,
-                'disableallsites' => TRUE,
-                'tagPosition' => FALSE,
-            ),
+    private static function getPluginCookies() {
+        $cookies = (object) array();
+        
+        $types = (array) self::option('cookie_types', array());
+        foreach ($types as $type) {
+            $cookies->{$type} = (object) array();
+        }
+        
+        return $cookies;
+    }
+    
+    private static function getPluginSettings() {
+        $settings = (object) array(
+            'consenttype' => self::option('consent_type', 'explicit'),
+            'clickAnyLinkToConsent' => TRUE,
+            'disableallsites' => TRUE,
+            'tagPosition' => FALSE,
         );
         
         $policy = self::option('policy');
@@ -30,27 +38,45 @@ class soscookies {
                 $policy = (int) icl_object_id($policy, 'page', TRUE, ICL_LANGUAGE_CODE);
             }
             
-            $options->settings->privacyPolicy = get_permalink($policy);
-        }
-        
-        $types = (array) self::option('cookie_types', array());
-        foreach ($types as $type) {
-            $options->cookies->{$type} = (object) array();
+            $settings->privacyPolicy = get_permalink($policy);
         }
         
         $refresh = self::option('refresh_on_consent');
-        $options->settings->refreshOnConsent = !empty($refresh);
+        $settings->refreshOnConsent = !empty($refresh);
         
-        $options->settings->style = self::option('theme', 'dark');
+        $settings->style = self::option('theme', 'dark');
         
-        $options->settings->bannerPosition = self::option('banner', 'top');
+        $settings->bannerPosition = self::option('banner', 'top');
         
         $tag = self::option('tag');
         if (!empty($tag)) {
-            $options->settings->tagPosition = $tag;
+            $settings->tagPosition = $tag;
         }
         
-        return $options;
+        return $settings;
+    }
+    
+    private static function getPluginStrings() {
+        $strings = (object) array();
+        
+        $strings->notificationTitle = _x('Your experience on this site will be improved by allowing cookies', 'notification', 'soscookies');
+        $strings->notificationTitleImplicit = _x('We use cookies to ensure you get the best experience on our website', 'notification', 'soscookies');
+        $strings->seeDetails = _x('see details', 'notification', 'soscookies');
+        $strings->seeDetailsImplicit = _x('change your settings', 'notification', 'soscookies');
+        $strings->hideDetails = _x('hide details', 'notification', 'soscookies');
+        $strings->allowCookies = _x('Allow cookies', 'notification', 'soscookies');
+        $strings->allowCookiesImplicit = _x('Close', 'notification', 'soscookies');
+        $strings->savePreference = _x('Save settings', 'notification', 'soscookies');
+        $strings->privacyPolicy = _x('Privacy policy', 'notification', 'soscookies');
+
+        $strings->privacySettings = _x('Privacy settings', 'settings', 'soscookies');
+        $strings->privacySettingsDialogTitleA = _x('Privacy settings', 'settings', 'soscookies');
+        $strings->privacySettingsDialogTitleB = '';
+        $strings->privacySettingsDialogSubtitle = _x('Some features of this website need your consent to remember who you are.', 'settings', 'soscookies');
+        $strings->preferenceConsent = _x('I consent', 'settings', 'soscookies');
+        $strings->preferenceDecline = _x('I decline', 'settings', 'soscookies');
+        
+        return $strings;
     }
     
     public static function enqueueStylesAndScripts() {
@@ -68,7 +94,9 @@ class soscookies {
             wp_enqueue_script('soscookies', plugins_url('scripts/soscookies.js', __DIR__), array('jquery', 'soscookies-cookieconsent'), FALSE, TRUE);
             
             wp_localize_script('soscookies', 'soscookies', array(
-                'options' => self::getPluginOptions()
+                'cookies' => self::getPluginCookies(),
+                'settings' => self::getPluginSettings(),
+                'strings' => self::getPluginStrings(),
             ));
         }
     }

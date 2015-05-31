@@ -1,5 +1,9 @@
 // <![CDATA[
 ;(function($) {
-    cc.initialise(soscookies.options);
+    cc.initialise({
+        cookies: soscookies.cookies,
+        settings: soscookies.settings,
+        strings: soscookies.strings
+    });
 })(jQuery);
 // ]]>
