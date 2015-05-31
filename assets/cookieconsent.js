@@ -699,7 +699,7 @@ var cc =
 			jQuery('#cc-approve-button-thissite').click(cc.onlocalconsentgiven);
 			if(cc.settings.clickAnyLinkToConsent)
 			{
-				jQuery("a").filter(':not(.cc-link)').click(cc.onlocalconsentgiven);
+				jQuery("a").filter(':not(.cc-link)').click(cc.onconsentgivenbyinteraction);
 			}
 			if(allcustom)
 			{
@@ -1060,6 +1060,11 @@ var cc =
 
 		return false;
 	},
+    
+    onconsentgivenbyinteraction: function() {
+        cc.onlocalconsentgiven();
+        return true;
+    },
 
 	showminiconsent: function()
 	{
