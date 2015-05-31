@@ -56,7 +56,7 @@ piklist('field', array(
 	'type' => 'checkbox',
 	'field' => 'refresh_on_consent',
 	'label' => _x('Refresh On Consent', 'admin', 'soscookies'),
-	'helper' => _x('Refresh the page after the user has given his/hers consent.', 'admin', 'soscookies'),
+	'description' => _x('Refresh the page after the user has given his/hers consent.', 'admin', 'soscookies'),
 	'choices' => array( 'yes' => '' ),
 ));
 
