@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-05-31 15:38+0100\n"
-"PO-Revision-Date: 2015-05-31 15:42+0100\n"
+"POT-Creation-Date: 2015-05-31 16:42+0100\n"
+"PO-Revision-Date: 2015-05-31 16:42+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it_IT\n"
@@ -16,7 +16,79 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../includes/soscookies.php:78 ../includes/soscookies.php:79
+#: ../includes/soscookies.php:62
+msgctxt "notification"
+msgid ""
+"Your experience on this site will be improved by allowing cookies. If you "
+"continue browsing, you will accept their use."
+msgstr ""
+"L'esperienza d'uso di questo sito sarà migliore se verranno abilitati i "
+"cookie. Proseguendo la navigazione, accetterai all'uso di tutti i cookie."
+
+#: ../includes/soscookies.php:63
+msgctxt "notification"
+msgid ""
+"We use cookies to ensure you get the best experience on our website. If you "
+"continue browsing or close this notice, you will accept their use."
+msgstr ""
+"Questo sito usa i cookies per migliorare l'esperienza d'uso. Proseguendo la "
+"navigazione oppure chiudendo questo avviso, accetterai all'uso di tutti i "
+"cookie."
+
+#: ../includes/soscookies.php:64 ../includes/soscookies.php:65
+msgctxt "notification"
+msgid "See details"
+msgstr "Visualizza dettagli"
+
+#: ../includes/soscookies.php:66
+msgctxt "notification"
+msgid "Hide details"
+msgstr "Nascondi dettagli"
+
+#: ../includes/soscookies.php:67
+msgctxt "notification"
+msgid "Allow cookies"
+msgstr "Consenti cookies"
+
+#: ../includes/soscookies.php:68
+msgctxt "notification"
+msgid "Close"
+msgstr "Chiudi"
+
+#: ../includes/soscookies.php:69
+msgctxt "notification"
+msgid "Save settings"
+msgstr "Salva impostazioni"
+
+#: ../includes/soscookies.php:70
+msgctxt "notification"
+msgid "Privacy policy"
+msgstr "Privacy policy"
+
+#: ../includes/soscookies.php:72 ../includes/soscookies.php:73
+msgctxt "settings"
+msgid "Privacy settings"
+msgstr "Impostazioni privacy"
+
+#: ../includes/soscookies.php:75
+msgctxt "settings"
+msgid ""
+"Some features of this website need your consent to remember who you are."
+msgstr ""
+"Alcune funzionalità di questo sito necessitano il tuo consenso per tenere "
+"traccia delle tue preferenze."
+
+#: ../includes/soscookies.php:76
+msgctxt "settings"
+msgid "I consent"
+msgstr "Do il consenso"
+
+#: ../includes/soscookies.php:77
+msgctxt "settings"
+msgid "I decline"
+msgstr "Non do il consenso"
+
+#: ../includes/soscookies.php:106 ../includes/soscookies.php:107
 msgctxt "admin"
 msgid "SOS Cookies"
 msgstr "SOS Cookies"
@@ -89,7 +161,8 @@ msgstr "Ricarca pagina"
 #: ../parts/settings/options.php:59
 msgctxt "admin"
 msgid "Refresh the page after the user has given his/hers consent."
-msgstr "Ricarica la pagina subito dopo la decisione dell'utente sull'uso dei cookie."
+msgstr ""
+"Ricarica la pagina subito dopo la decisione dell'utente sull'uso dei cookie."
 
 #: ../parts/settings/options.php:66
 msgctxt "admin"

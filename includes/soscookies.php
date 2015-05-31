@@ -59,11 +59,11 @@ class soscookies {
     private static function getPluginStrings() {
         $strings = (object) array();
         
-        $strings->notificationTitle = _x('Your experience on this site will be improved by allowing cookies', 'notification', 'soscookies');
-        $strings->notificationTitleImplicit = _x('We use cookies to ensure you get the best experience on our website', 'notification', 'soscookies');
-        $strings->seeDetails = _x('see details', 'notification', 'soscookies');
-        $strings->seeDetailsImplicit = _x('see details', 'notification', 'soscookies');
-        $strings->hideDetails = _x('hide details', 'notification', 'soscookies');
+        $strings->notificationTitle = _x('Your experience on this site will be improved by allowing cookies. If you continue browsing, you will accept their use.', 'notification', 'soscookies');
+        $strings->notificationTitleImplicit = _x('We use cookies to ensure you get the best experience on our website. If you continue browsing or close this notice, you will accept their use.', 'notification', 'soscookies');
+        $strings->seeDetails = _x('See details', 'notification', 'soscookies');
+        $strings->seeDetailsImplicit = _x('See details', 'notification', 'soscookies');
+        $strings->hideDetails = _x('Hide details', 'notification', 'soscookies');
         $strings->allowCookies = _x('Allow cookies', 'notification', 'soscookies');
         $strings->allowCookiesImplicit = _x('Close', 'notification', 'soscookies');
         $strings->savePreference = _x('Save settings', 'notification', 'soscookies');
