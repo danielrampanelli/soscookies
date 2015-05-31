@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: soscookies\n"
-"POT-Creation-Date: 2015-05-31 16:42+0100\n"
-"PO-Revision-Date: 2015-05-31 22:38+0100\n"
+"POT-Creation-Date: 2015-06-01 00:47+0100\n"
+"PO-Revision-Date: 2015-06-01 00:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it_IT\n"
@@ -16,7 +16,64 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../includes/soscookies.php:62
+#: ../includes/services.php:12
+msgctxt "services"
+msgid "Statistic data collector"
+msgstr ""
+"Raccolta di informazioni, in forma aggregata, sul numero degli utenti e su "
+"come questi visitano il sito stesso"
+
+#: ../includes/services.php:19
+msgctxt "services"
+msgid "YouTube embedded videos"
+msgstr "Inclusione video Youtube"
+
+#: ../includes/services.php:27
+msgctxt "services"
+msgid "Vimeo embedded videos"
+msgstr "Inclusione video Vimeo"
+
+#: ../includes/services.php:34
+msgctxt "services"
+msgid "Google+ Social media sharing"
+msgstr "Google+ Social media sharing"
+
+#: ../includes/services.php:42 ../includes/services.php:57
+msgctxt "services"
+msgid "Facebook Social media sharing"
+msgstr "Facebook Social media sharing"
+
+#: ../includes/services.php:50
+msgctxt "services"
+msgid "Twitter Social media sharing"
+msgstr "Twitter Social media sharing"
+
+#: ../includes/services.php:64 ../includes/services.php:71
+msgctxt "services"
+msgid "Social media sharing"
+msgstr "Social media sharing"
+
+#: ../includes/services.php:78
+msgctxt "services"
+msgid "Discussion platform."
+msgstr "Piattaforma commenti"
+
+#: ../includes/services.php:85
+msgctxt "services"
+msgid "Social media sharing."
+msgstr "Social media sharing"
+
+#: ../includes/services.php:92
+msgctxt "services"
+msgid "Trip Advisor review platform for travel-related content."
+msgstr "Trip Advisor piattaforma per recensioni e commenti."
+
+#: ../includes/services.php:106
+msgctxt "services"
+msgid "Weather forecasting service."
+msgstr "Servizio previsioni meteo."
+
+#: ../includes/soscookies.php:64
 msgctxt "notification"
 msgid ""
 "Your experience on this site will be improved by allowing cookies. If you "
@@ -25,7 +82,7 @@ msgstr ""
 "L'esperienza d'uso di questo sito sarà migliore se verranno abilitati i "
 "cookie. Proseguendo la navigazione acconsenti all'uso di tutti i cookie."
 
-#: ../includes/soscookies.php:63
+#: ../includes/soscookies.php:65
 msgctxt "notification"
 msgid ""
 "We use cookies to ensure you get the best experience on our website. If you "
@@ -35,42 +92,42 @@ msgstr ""
 "navigazione oppure chiudendo questo avviso, acconsenti all'uso di tutti i "
 "cookie."
 
-#: ../includes/soscookies.php:64 ../includes/soscookies.php:65
+#: ../includes/soscookies.php:66 ../includes/soscookies.php:67
 msgctxt "notification"
 msgid "See details"
 msgstr "Visualizza dettagli"
 
-#: ../includes/soscookies.php:66
+#: ../includes/soscookies.php:68
 msgctxt "notification"
 msgid "Hide details"
 msgstr "Nascondi dettagli"
 
-#: ../includes/soscookies.php:67
+#: ../includes/soscookies.php:69
 msgctxt "notification"
 msgid "Allow cookies"
 msgstr "Consenti cookies"
 
-#: ../includes/soscookies.php:68
+#: ../includes/soscookies.php:70
 msgctxt "notification"
 msgid "Close"
 msgstr "Chiudi"
 
-#: ../includes/soscookies.php:69
+#: ../includes/soscookies.php:71
 msgctxt "notification"
 msgid "Save settings"
 msgstr "Salva impostazioni"
 
-#: ../includes/soscookies.php:70
+#: ../includes/soscookies.php:72
 msgctxt "notification"
 msgid "Privacy policy"
 msgstr "Privacy policy"
 
-#: ../includes/soscookies.php:72 ../includes/soscookies.php:73
+#: ../includes/soscookies.php:74 ../includes/soscookies.php:75
 msgctxt "settings"
 msgid "Privacy settings"
 msgstr "Impostazioni privacy"
 
-#: ../includes/soscookies.php:75
+#: ../includes/soscookies.php:77
 msgctxt "settings"
 msgid ""
 "Some features of this website need your consent to remember who you are."
@@ -78,17 +135,17 @@ msgstr ""
 "Alcune funzionalità di questo sito necessitano il tuo consenso per tenere "
 "traccia delle tue preferenze."
 
-#: ../includes/soscookies.php:76
+#: ../includes/soscookies.php:78
 msgctxt "settings"
 msgid "I consent"
 msgstr "Do il consenso"
 
-#: ../includes/soscookies.php:77
+#: ../includes/soscookies.php:79
 msgctxt "settings"
 msgid "I decline"
 msgstr "Non do il consenso"
 
-#: ../includes/soscookies.php:106 ../includes/soscookies.php:107
+#: ../includes/soscookies.php:108 ../includes/soscookies.php:109
 msgctxt "admin"
 msgid "SOS Cookies"
 msgstr "SOS Cookies"
