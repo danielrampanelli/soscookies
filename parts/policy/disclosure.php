@@ -1,47 +1,48 @@
 <div class="contains-cookie-policy-disclosure">
     
-    <h3>Informativa ai sensi dell'art. 13 del d.lgs. n. 196/2003 (c.d. codice privacy)</h3>
-    <p><span class="contains-cookie-policy-owner"><?php echo $name ?></span>, con sede in <span class="contains-cookie-policy-address"><?php echo $address ?></span>, informa, ai sensi dell'art. 13 del Codice Privacy ed in ottemperanza alle prescrizioni del Provvedimento 229/2014 del Garante per la Protezione dei Dati Personali, che il presente sito utilizza le seguenti tipologie di cookie (ossia dei piccoli file di testo che i siti visitati inviano al tuo device, dove vengono poi memorizzati al fine di essere ritrasmessi agli stessi siti alla visita successiva):</p>
+    <h3>Information pursuant to art. 13 of Decree 196/03</h3>
+    <p><span class="contains-cookie-policy-owner"><?php echo $name ?></span> - <span class="contains-cookie-policy-address"><?php echo $address ?></span>, informa, 
+    Cookies collected from this website:</p>
 
-    <h4>Cookie tecnici</h4>
-    <p>Quei cookie strettamente necessari per permettere:</p>
-    <p>la navigazione e fruizione del sito web (permettendo, ad esempio, di realizzare un acquisto o autenticarsi per accedere ad aree riservate, "cookie di navigazione o di sessione");</p>
-    <p>la raccolta di informazioni, in forma aggregata, sul numero degli utenti e su come questi visitano il sito stesso ("cookie analytics");</p>
-    <p>la navigazione in funzione di una serie di criteri selezionati (ad esempio, la lingua, "cookie di funzionalità") al fine di migliorare il servizio reso allo stesso.</p>
-    <p>Tali cookie non vengono utilizzati per scopi ulteriori rispetto a quelli funzionali sopra descritti e pertanto la loro installazione non richiede il tuo consenso.</p>
+    <h4>Technical Cookie</h4>
+    <p>Cookies needed to allow:</p>
+    <p>navigation and functionality of website;</p>
+    <p>informations collections of number of users and how do they and how they visit the website ("analytics cookies");</p>
+    <p>browsing function selected criteria (e.g. language, "functionalities cookies") to improve user experience.</p>
+    <p>These cookies are not used for purposes other than those described above and therefore their installation does not require your consent.</p>
 
-    <h4>Cookie di profilazione di terze parti</h4>
-    <p>Tali cookie sono installati da soggetti diversi da <span class="contains-cookie-policy-owner"><?php echo $name ?></span> e l'installazione degli stessi richiede il tuo consenso; in mancanza gli stessi non saranno installati.</p>
-    <p>Ti riportiamo quindi di seguito i link alle informative privacy delle terze parti dove potrai esprimere il tuo consenso all'installazione di tali cookie evidenziando che, laddove non effettuassi alcuna scelta e decidessi di proseguire comunque con la navigazione all'interno del presente sito web, acconsentirai all'uso di tali cookie.</p>
+    <h4>Information collected by third-parties</h4>
+    <p>We may allow third-parties from other providers that need your consent; if not given they will not be installed.</p>
+    <p>Any third parties to whom we may disclose personal information may have their own privacy policies which describe how they use and disclose personal information. Those policies will govern use, handling and disclosure of your personal information once we have shared it with those third parties as described in this Privacy Policy. If you want to learn more about their privacy practices, we encourage you to visit the websites of those third parties.</p>
 
     <?php include(__DIR__.'/services.php') ?>
     
-    <p>In aggiunta a quanto sopra esposto, potrai comunque impostare il tuo browser in maniera da rifiutare automaticamente la ricezione dei cookie attivando l'apposita opzione: il mancato utilizzo dei cookie tecnici, tuttavia, potrebbe comportare difficoltà nell'interazione con il presente sito.</p>
+    <p>You may delete or decline cookies by changing your browser settings. Website services without cookies consent will be compromised.</p>
     
-    <h4>Preferenze privacy</h4>
-    <p>In qualsiasi momento puoi rivedere le impostazioni della privacy per questo sito.</p>
+    <h4>Privacy settings</h4>
+    <p>Whenever you want, you can change your privacy settings for this website.</p>
     
     <p>
-        <a class="triggers-cookies-preferences" href="#">IMPOSTAZIONI PRIVACY</a>
+        <a class="triggers-cookies-preferences" href="#">PRIVACY SETTINGS</a>
     </p>
     
-    <p>Ti comunichiamo che, ai sensi dell'art. 7 del Codice Privacy, ti spettano determinati diritti, tra i quali quello di opporti al trattamento. A tal fine, pertanto, potrai modificare la tua scelta in qualsiasi momento accedendo nuovamente alla presente informativa.</p>
+    <!-- <p>Ti comunichiamo che, ai sensi dell'art. 7 del Codice Privacy, ti spettano determinati diritti, tra i quali quello di opporti al trattamento. A tal fine, pertanto, potrai modificare la tua scelta in qualsiasi momento accedendo nuovamente alla presente informativa.</p> -->
     
-    <h3>ISTRUZIONI DISABILITAZIONE COOKIES DAI BROWSERS</h3>
+    <h3>MANAGE YOUR COOKIES AND SITE DATA</h3>
     
-    <h4>Se si utilizza Internet Explorer</h4>
-    <p>In Internet Explorer, fare clic su "Strumenti" poi "Opzioni Internet". Nella scheda Privacy, spostare il cursore verso l'alto per bloccare tutti i cookie o verso il basso per consentire a tutti i cookie, e quindi fare clic su OK.</p>
+    <h4>If you are using Internet Explorer</h4>
+    <p>Go to Tools in the menu bar. Click on Internet Options. Click on the Privacy tab on top. Move the slider up to the "Block all Cookies" button.</p>
     
-    <h4>Se si utilizza il browser Firefox</h4>
-    <p>Vai al menu "Strumenti" del browser e selezionare il menu "Opzioni" Fare clic sulla scheda "Privacy", deselezionare la casella "Accetta cookie" e fare clic su OK.</p>
+    <h4>If you are using Firefox</h4>
+    <p>Go to Tools in the menu bar. Click on Options. Click on the Privacy tab. Disable the box that says "Accept Cookies From sites".</p>
     
-    <h4>Se si utilizza il browser Safari</h4>
-    <p>In Browser della votazione, selezionare il menu "Modifica" e selezionare "Preferences". Clicca su "Privacy". Posizionare l'impostazione "cookies Block" sempre "e fare clic su OK.</p>
+    <h4>If you are using Safari</h4>
+    <p>Go to the Safari menu (icon in top right of browser) and select Preferences. In the popup window that appears, select the Security icon (a padlock). Under "Accept Cookies", select the "Never" button.</p>
     
-    <h4>Se si utilizza il browser Google Chrome</h4>
-    <p>Fai clic sul menu Chrome nella barra degli strumenti del browser. Selezionare "Impostazioni". Fare clic su "Mostra impostazioni avanzate". Nella sezione "Privacy", fai clic sul pulsante "Impostazioni contenuti". Nella sezione "Cookies", selezionare "Non consentire ai siti per memorizzare i dati" e di controllo "cookie di blocco e di terze parti i dati sito", e quindi fare clic su OK.</p>
+    <h4>If you are using Google Chrome</h4>
+    <p>Click on the spanner icon in the top right of the browser. Click on "Options". Click on "Under the Bonnet" (UK) / "Under the Hood" (US). Click on the "Content settings" button in the Privacy section. Ensure that "Allow local data to be set" is selected. Select "Block sites from setting any data".</p>
     
-    <h4>Altri browser</h4>
-    <p>Se usi un qualsiasi altro browser, cerca nelle Impostazioni del browser la modalità di gestione dei cookies.</p>
+    <h4>Other browser</h4>
+    <p>If you use any other browser, look in browser settings how to manage cookies.</p>
     
 </div>
