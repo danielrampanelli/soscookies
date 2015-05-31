@@ -67,7 +67,7 @@ piklist('field', array(
 	'choices' => array(
         'dark' => 'Dark',
         'light' => 'Light',
-        'monochromatic' => 'Monochromatic',
+        'monochrome' => 'Monochrome',
 	),
 ));
 
