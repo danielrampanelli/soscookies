@@ -7,11 +7,26 @@ class soscookies_services {
     public static function get() {
         if (empty(self::$services)) {
             self::$services = array(
+                'analytics' => array(
+                    'name' => 'Google Analytics',
+                    'description' => _x('Statistic data collector', 'services', 'soscookies'),
+                    'urls' => array(
+                        'http://www.google.com/intl/it_ALL/analytics/learn/privacy.html',
+                    ),
+                ),
                 'youtube' => array(
                     'name' => 'YouTube',
                     'description' => _x('YouTube embedded videos', 'services', 'soscookies'),
                     'urls' => array(
                         'https://www.youtube.com/yt/policyandsafety/',
+                    ),
+                ),
+
+                'vimeo' => array(
+                    'name' => 'Vimeo',
+                    'description' => _x('Vimeo embedded videos', 'services', 'soscookies'),
+                    'urls' => array(
+                        'https://vimeo.com/privacy',
                     ),
                 ),
                 'google' => array(
