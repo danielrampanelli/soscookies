@@ -78,6 +78,15 @@ class soscookies {
         $strings->preferenceConsent = _x('I consent', 'settings', 'soscookies');
         $strings->preferenceDecline = _x('I decline', 'settings', 'soscookies');
         
+        $strings->analyticsDefaultTitle = _x('Analytics', 'settings', 'soscookies');
+        $strings->analyticsDefaultDescription = _x('We anonymously measure your use of this website to improve your experience.', 'settings', 'soscookies');
+        
+        $strings->socialDefaultTitle = _x('Social media', 'settings', 'soscookies');
+        $strings->socialDefaultDescription = _x('Facebook, Twitter and other social websites need to know who you are to work properly.', 'settings', 'soscookies');
+        
+        $strings->advertisingDefaultTitle = _x('Advertising', 'settings', 'soscookies');
+        $strings->advertisingDefaultDescription = _x('Adverts will be chosen for you automatically based on your past behaviour and interests.', 'settings', 'soscookies');
+        
         return $strings;
     }
     

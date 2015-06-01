@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: soscookies\n"
-"POT-Creation-Date: 2015-06-01 00:47+0100\n"
-"PO-Revision-Date: 2015-06-01 00:50+0100\n"
+"POT-Creation-Date: 2015-06-01 22:48+0100\n"
+"PO-Revision-Date: 2015-06-01 22:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c\n"
@@ -28,47 +28,52 @@ msgctxt "services"
 msgid "YouTube embedded videos"
 msgstr "Inclusione video Youtube"
 
-#: ../includes/services.php:27
+#: ../includes/services.php:26
 msgctxt "services"
 msgid "Vimeo embedded videos"
 msgstr "Inclusione video Vimeo"
 
-#: ../includes/services.php:34
+#: ../includes/services.php:33
 msgctxt "services"
 msgid "Google+ Social media sharing"
 msgstr "Google+ Social media sharing"
 
-#: ../includes/services.php:42 ../includes/services.php:57
+#: ../includes/services.php:41 ../includes/services.php:56
 msgctxt "services"
 msgid "Facebook Social media sharing"
 msgstr "Facebook Social media sharing"
 
-#: ../includes/services.php:50
+#: ../includes/services.php:49
 msgctxt "services"
 msgid "Twitter Social media sharing"
 msgstr "Twitter Social media sharing"
 
-#: ../includes/services.php:64 ../includes/services.php:71
+#: ../includes/services.php:63
 msgctxt "services"
 msgid "Social media sharing"
 msgstr "Social media sharing"
 
-#: ../includes/services.php:78
+#: ../includes/services.php:70
+msgctxt "services"
+msgid "Online mapping platform."
+msgstr "Piattaforma di mappe online."
+
+#: ../includes/services.php:77
 msgctxt "services"
 msgid "Discussion platform."
 msgstr "Piattaforma commenti"
 
-#: ../includes/services.php:85
+#: ../includes/services.php:84
 msgctxt "services"
 msgid "Social media sharing."
 msgstr "Social media sharing"
 
-#: ../includes/services.php:92
+#: ../includes/services.php:91
 msgctxt "services"
 msgid "Trip Advisor review platform for travel-related content."
 msgstr "Trip Advisor piattaforma per recensioni e commenti."
 
-#: ../includes/services.php:106
+#: ../includes/services.php:105
 msgctxt "services"
 msgid "Weather forecasting service."
 msgstr "Servizio previsioni meteo."
@@ -145,123 +150,202 @@ msgctxt "settings"
 msgid "I decline"
 msgstr "Non do il consenso"
 
-#: ../includes/soscookies.php:108 ../includes/soscookies.php:109
+#: ../includes/soscookies.php:81
+msgctxt "settings"
+msgid "Analytics"
+msgstr "Analytics"
+
+#: ../includes/soscookies.php:82
+msgctxt "settings"
+msgid ""
+"We anonymously measure your use of this website to improve your experience."
+msgstr ""
+
+#: ../includes/soscookies.php:84
+msgctxt "settings"
+msgid "Social media"
+msgstr "Social media sharing"
+
+#: ../includes/soscookies.php:85
+msgctxt "settings"
+msgid ""
+"Facebook, Twitter and other social websites need to know who you are to work "
+"properly."
+msgstr ""
+
+#: ../includes/soscookies.php:87
+msgctxt "settings"
+msgid "Advertising"
+msgstr "Pubblicità"
+
+#: ../includes/soscookies.php:88
+msgctxt "settings"
+msgid ""
+"Adverts will be chosen for you automatically based on your past behaviour "
+"and interests."
+msgstr ""
+
+#: ../includes/soscookies.php:125
+msgctxt "admin"
+msgid "Consent"
+msgstr "Consenso"
+
+#: ../includes/soscookies.php:126 ../includes/soscookies.php:127
 msgctxt "admin"
 msgid "SOS Cookies"
 msgstr "SOS Cookies"
 
-#: ../parts/settings/options.php:10
+#: ../parts/settings/consent.php:11
 msgctxt "admin"
 msgid "Status"
 msgstr "Stato"
 
-#: ../parts/settings/options.php:12 ../parts/settings/options.php:89
+#: ../parts/settings/consent.php:14 ../parts/settings/consent.php:79
 msgctxt "admin"
 msgid "Disabled"
 msgstr "Disabilitato"
 
-#: ../parts/settings/options.php:13
+#: ../parts/settings/consent.php:15
 msgctxt "admin"
 msgid "Testing (Administrators)"
 msgstr "Test (Utenti amministratori)"
 
-#: ../parts/settings/options.php:14
+#: ../parts/settings/consent.php:16
 msgctxt "admin"
 msgid "Enabled (All Users)"
 msgstr "Attivato (Tutti gli utenti)"
 
-#: ../parts/settings/options.php:21
-msgctxt "admin"
-msgid "Policy Page"
-msgstr "Pagina policy"
-
-#: ../parts/settings/options.php:37
+#: ../parts/settings/consent.php:23
 msgctxt "admin"
 msgid "Cookie Types"
 msgstr "Tipologie Cookie"
 
-#: ../parts/settings/options.php:39
+#: ../parts/settings/consent.php:25
 msgctxt "admin"
 msgid "Analytics"
 msgstr "Analytics"
 
-#: ../parts/settings/options.php:40
+#: ../parts/settings/consent.php:26
 msgctxt "admin"
 msgid "Social"
 msgstr "Social"
 
-#: ../parts/settings/options.php:41
+#: ../parts/settings/consent.php:27
 msgctxt "admin"
 msgid "Advertising"
 msgstr "Pubblicità"
 
-#: ../parts/settings/options.php:48
+#: ../parts/settings/consent.php:34
 msgctxt "admin"
 msgid "Consent Type"
 msgstr "Modalità consenso"
 
-#: ../parts/settings/options.php:50
+#: ../parts/settings/consent.php:37
 msgctxt "admin"
 msgid "Explicit (Opt-In)"
 msgstr "Esplicita (Opt-In)"
 
-#: ../parts/settings/options.php:51
+#: ../parts/settings/consent.php:38
 msgctxt "admin"
 msgid "Implicit (Opt-Out)"
 msgstr "Implicita (Opt-Out)"
 
-#: ../parts/settings/options.php:58
+#: ../parts/settings/consent.php:45
 msgctxt "admin"
 msgid "Refresh On Consent"
 msgstr "Ricarca pagina"
 
-#: ../parts/settings/options.php:59
+#: ../parts/settings/consent.php:46
 msgctxt "admin"
 msgid "Refresh the page after the user has given his/hers consent."
 msgstr ""
 "Ricarica la pagina dopo che l'utente ha acconsentito all'uso dei cookie."
 
-#: ../parts/settings/options.php:66
+#: ../parts/settings/consent.php:53
 msgctxt "admin"
 msgid "Theme"
 msgstr "Stile"
 
-#: ../parts/settings/options.php:77
+#: ../parts/settings/consent.php:65
 msgctxt "admin"
 msgid "Banner"
 msgstr "Notifica"
 
-#: ../parts/settings/options.php:79
+#: ../parts/settings/consent.php:68
 msgctxt "admin"
 msgid "Top"
 msgstr "In alto"
 
-#: ../parts/settings/options.php:80
+#: ../parts/settings/consent.php:69
 msgctxt "admin"
 msgid "Bottom"
 msgstr "In basso"
 
-#: ../parts/settings/options.php:87
+#: ../parts/settings/consent.php:76
 msgctxt "admin"
 msgid "Tag"
 msgstr "Etichetta"
 
-#: ../parts/settings/options.php:90
+#: ../parts/settings/consent.php:80
 msgctxt "admin"
 msgid "Bottom Left"
 msgstr "In basso a sinistra"
 
-#: ../parts/settings/options.php:91
+#: ../parts/settings/consent.php:81
 msgctxt "admin"
 msgid "Bottom Right"
 msgstr "In basso a destra"
 
-#: ../parts/settings/options.php:92
+#: ../parts/settings/consent.php:82
 msgctxt "admin"
 msgid "Vertical Left"
 msgstr "A sinistra"
 
-#: ../parts/settings/options.php:93
+#: ../parts/settings/consent.php:83
 msgctxt "admin"
 msgid "Vertical Right"
 msgstr "A destra"
+
+#: ../parts/settings/policy.php:12
+msgctxt "admin"
+msgid "Page"
+msgstr "Pagina"
+
+#: ../parts/settings/policy.php:29
+msgctxt "admin"
+msgid "Language"
+msgstr "Lingua"
+
+#: ../parts/settings/policy.php:32
+msgctxt "admin"
+msgid "Default"
+msgstr "Default"
+
+#: ../parts/settings/policy.php:33
+msgctxt "admin"
+msgid "English"
+msgstr "Inglese"
+
+#: ../parts/settings/policy.php:34
+msgctxt "admin"
+msgid "Italian"
+msgstr "Italiano"
+
+#: ../parts/settings/policy.php:41
+msgctxt "admin"
+msgid "Name"
+msgstr "Nome"
+
+#: ../parts/settings/policy.php:48
+msgctxt "admin"
+msgid "Address"
+msgstr "Indirizzo"
+
+#: ../parts/settings/policy.php:62
+msgctxt "admin"
+msgid "Services"
+msgstr "Servizio"
+
+#~ msgctxt "admin"
+#~ msgid "Policy Page"
+#~ msgstr "Pagina policy"
