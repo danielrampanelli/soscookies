@@ -35,7 +35,7 @@ class soscookies_shortcodes {
         return $services;
     }
     
-    public static function policyDisclosure($attributes, $content = '') {
+    public static function policyDisclosure($attributes = array(), $content = '') {
         $name = soscookies::option('name', '[NAME]');
         $address = soscookies::option('address', '[ADDRESS]');
         $services = self::getServices();
@@ -45,7 +45,7 @@ class soscookies_shortcodes {
         return ob_get_clean();
     }
     
-    public static function policyServices($attributes, $content = '') {
+    public static function policyServices($attributes = array(), $content = '') {
         $services = self::getServices();
         
         ob_start();
