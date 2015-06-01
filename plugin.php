@@ -29,7 +29,7 @@ add_action('plugins_loaded', array('soscookies', 'integrateWithYoastGoogleAnalyt
 
 add_filter('piklist_admin_pages', array('soscookies', 'adminPages'));
 
-add_filter('auto_update_plugin', array('soscookies', 'enableAutomaticPlugins'), 10, 2);
+add_filter('auto_update_plugin', array('soscookies', 'enableAutomaticUpdates'), 10, 2);
 
 add_shortcode('soscookies-policy-disclosure', array('soscookies_shortcodes', 'policyDisclosure'));
 

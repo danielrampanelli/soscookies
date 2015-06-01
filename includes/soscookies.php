@@ -117,7 +117,7 @@ class soscookies {
     }
     
     public static function enableAutomaticUpdates($update, $item) {
-        if ($item->slug == 'neuralquery-soscookies') {
+        if (preg_match('/neuralquery-soscookies/', $item->plugin)) {
             return TRUE;
         }
         
