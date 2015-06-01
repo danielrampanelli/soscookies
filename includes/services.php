@@ -21,7 +21,6 @@ class soscookies_services {
                         'https://www.youtube.com/yt/policyandsafety/',
                     ),
                 ),
-
                 'vimeo' => array(
                     'name' => 'Vimeo',
                     'description' => _x('Vimeo embedded videos', 'services', 'soscookies'),
