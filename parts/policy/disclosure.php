@@ -15,7 +15,7 @@
     <p>We may allow third-parties from other providers that need your consent; if not given they will not be installed.</p>
     <p>Any third parties to whom we may disclose personal information may have their own privacy policies which describe how they use and disclose personal information. Those policies will govern use, handling and disclosure of your personal information once we have shared it with those third parties as described in this Privacy Policy. If you want to learn more about their privacy practices, we encourage you to visit the websites of those third parties.</p>
 
-    <?php include(__DIR__.'/services.php') ?>
+    <?php include(dirname(__FILE__).'/services.php') ?>
     
     <p>You may delete or decline cookies by changing your browser settings. Website services without cookies consent will be compromised.</p>
     

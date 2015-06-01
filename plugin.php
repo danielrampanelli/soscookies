@@ -12,10 +12,10 @@ Plugin Type: Piklist
 License: GPL, Version 3
 */
 
-require_once(__DIR__.'/includes/soscookies.php');
-require_once(__DIR__.'/includes/shortcodes.php');
-require_once(__DIR__.'/includes/services.php');
-require_once(__DIR__.'/libs/plugin-update-checker/plugin-update-checker.php');
+require_once(dirname(__FILE__).'/includes/soscookies.php');
+require_once(dirname(__FILE__).'/includes/shortcodes.php');
+require_once(dirname(__FILE__).'/includes/services.php');
+require_once(dirname(__FILE__).'/libs/plugin-update-checker/plugin-update-checker.php');
 
 PucFactory::buildUpdateChecker('http://neuralquery.com/wordpress/updates/?action=get_metadata&slug=neuralquery-soscookies', __FILE__);
 

@@ -14,7 +14,7 @@
     <p>Tali cookie sono installati da soggetti diversi da <span class="contains-cookie-policy-owner"><?php echo $name ?></span> e l'installazione degli stessi richiede il tuo consenso; in mancanza gli stessi non saranno installati.</p>
     <p>Ti riportiamo quindi di seguito i link alle informative privacy delle terze parti dove potrai esprimere il tuo consenso all'installazione di tali cookie evidenziando che, laddove non effettuassi alcuna scelta e decidessi di proseguire comunque con la navigazione all'interno del presente sito web, acconsentirai all'uso di tali cookie.</p>
 
-    <?php include(__DIR__.'/services.php') ?>
+    <?php include(dirname(__FILE__).'/services.php') ?>
     
     <p>In aggiunta a quanto sopra esposto, potrai comunque impostare il tuo browser in maniera da rifiutare automaticamente la ricezione dei cookie attivando l'apposita opzione: il mancato utilizzo dei cookie tecnici, tuttavia, potrebbe comportare difficoltà nell'interazione con il presente sito.</p>
     

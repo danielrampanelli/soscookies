@@ -82,7 +82,7 @@ class soscookies {
     }
     
     public static function setup() {
-        load_plugin_textdomain('soscookies', FALSE, dirname(plugin_basename(__DIR__.'/../plugin.php')).'/languages/');
+        load_plugin_textdomain('soscookies', FALSE, dirname(plugin_basename(dirname(__FILE__).'/../plugin.php')).'/languages/');
     }
     
     public static function enqueueStylesAndScripts() {
@@ -93,11 +93,11 @@ class soscookies {
         }
         
         if (($status == 'testing' && current_user_can('manage_options')) || ($status == 'yes' && !is_user_logged_in())) {
-            wp_enqueue_style('soscookies-cookieconsent', plugins_url('assets/cookieconsent.css', __DIR__));
+            wp_enqueue_style('soscookies-cookieconsent', plugins_url('assets/cookieconsent.css', dirname(__FILE__)));
             
-            wp_register_script('soscookies-cookieconsent', plugins_url('assets/cookieconsent.js', __DIR__), array('jquery'), FALSE, TRUE);
+            wp_register_script('soscookies-cookieconsent', plugins_url('assets/cookieconsent.js', dirname(__FILE__)), array('jquery'), FALSE, TRUE);
             
-            wp_enqueue_script('soscookies', plugins_url('scripts/soscookies.js', __DIR__), array('jquery', 'soscookies-cookieconsent'), FALSE, TRUE);
+            wp_enqueue_script('soscookies', plugins_url('scripts/soscookies.js', dirname(__FILE__)), array('jquery', 'soscookies-cookieconsent'), FALSE, TRUE);
             
             wp_localize_script('soscookies', 'soscookies', array(
                 'cookies' => self::getPluginCookies(),
