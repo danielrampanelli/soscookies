@@ -49,4 +49,18 @@ piklist('field', array(
     'columns' => 12,
 ));
 
+$services = array();
+
+$allServices = soscookies_services::get();
+foreach ($allServices as $id => $service) {
+    $services[$id] = $service['name'];
+}
+
+piklist('field', array(
+	'type' => 'checkbox',
+	'field' => 'services',
+	'label' => _x('Services', 'admin', 'soscookies'),
+	'choices' => $services,
+));
+
 ?>

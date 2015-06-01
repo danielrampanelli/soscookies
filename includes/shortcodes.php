@@ -20,15 +20,15 @@ class soscookies_shortcodes {
         return $file;
     }
     
-    private static function getServices($value) {
+    private static function getServices() {
         $allServices = soscookies_services::get();
         
         $services = array();
         
-        $ids = explode(',', $value);
-        foreach ($ids as $id) {
-            if (array_key_exists($id, $allServices)) {
-                $services[] = $allServices[$id];
+        $values = soscookies::option('services', array());
+        foreach ($values as $value) {
+            if (array_key_exists($value, $allServices)) {
+                $services[] = $allServices[$value];
             }
         }
         
@@ -38,11 +38,7 @@ class soscookies_shortcodes {
     public static function policyDisclosure($attributes, $content = '') {
         $name = soscookies::option('name', '[NAME]');
         $address = soscookies::option('address', '[ADDRESS]');
-        $services = array();
-        
-        if (!empty($attributes['services'])) {
-            $services = self::getServices($attributes['services']);
-        }
+        $services = self::getServices();
         
         ob_start();
         include(self::getTemplate('policy/disclosure'));
@@ -50,11 +46,7 @@ class soscookies_shortcodes {
     }
     
     public static function policyServices($attributes, $content = '') {
-        $services = array();
-        
-        if (!empty($attributes['services'])) {
-            $services = self::getServices($attributes['services']);
-        }
+        $services = self::getServices();
         
         ob_start();
         include(self::getTemplate('policy/services'));
