@@ -31,17 +31,9 @@ class soscookies_shortcodes {
     }
     
     public static function policyDisclosure($attributes, $content = '') {
-        $name = '(NAME)';
-        $address = '(ADDRESS)';
+        $name = soscookies::option('name', '[NAME]');
+        $address = soscookies::option('address', '[ADDRESS]');
         $services = array();
-        
-        if (!empty($attributes['name'])) {
-            $name = $attributes['name'];
-        }
-        
-        if (!empty($attributes['address'])) {
-            $address = $attributes['address'];
-        }
         
         if (!empty($attributes['services'])) {
             $services = self::getServices($attributes['services']);
