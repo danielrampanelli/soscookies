@@ -67,10 +67,10 @@ class soscookies_services {
                     ),
                 ),
                 'googlemaps' => array(
-                    'name' => 'Online mapping platform.',
-                    'description' => _x('Social media sharing', 'services', 'soscookies'),
+                    'name' => 'Google Maps',
+                    'description' => _x('Online mapping platform.', 'services', 'soscookies'),
                     'urls' => array(
-                        'http://www.addthis.com/privacy/privacy-policy',
+                        'http://www.google.com/policies/privacy/',
                     ),
                 ),
                 'disqus' => array(
