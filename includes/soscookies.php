@@ -81,6 +81,10 @@ class soscookies {
         return $strings;
     }
     
+    public static function setup() {
+        load_plugin_textdomain('soscookies', FALSE, dirname(plugin_basename(__DIR__.'/../plugin.php')).'/languages/');
+    }
+    
     public static function enqueueStylesAndScripts() {
         $status = self::option('status');
         

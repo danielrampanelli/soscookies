@@ -19,9 +19,7 @@ require_once(__DIR__.'/libs/plugin-update-checker/plugin-update-checker.php');
 
 PucFactory::buildUpdateChecker('http://neuralquery.com/wordpress/updates/?action=get_metadata&slug=neuralquery-soscookies', __FILE__);
 
-add_action('after_setup_theme', function() {
-    load_plugin_textdomain('soscookies', FALSE, dirname(plugin_basename(__FILE__)).'/languages/');
-});
+add_action('after_setup_theme', array('soscookies', 'setup'));
 
 add_action('wp_enqueue_scripts', array('soscookies', 'enqueueStylesAndScripts'));
 
