@@ -15,6 +15,9 @@ License: GPL, Version 3
 require_once(__DIR__.'/includes/soscookies.php');
 require_once(__DIR__.'/includes/shortcodes.php');
 require_once(__DIR__.'/includes/services.php');
+require_once(__DIR__.'/libs/plugin-update-checker/plugin-update-checker.php');
+
+PucFactory::buildUpdateChecker('http://neuralquery.com/wordpress/updates/?action=get_metadata&slug=neuralquery-soscookies', __FILE__);
 
 add_action('after_setup_theme', function() {
     load_plugin_textdomain('soscookies', FALSE, dirname(plugin_basename(__FILE__)).'/languages/');
