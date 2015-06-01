@@ -116,6 +116,14 @@ class soscookies {
         	return $pages;
     }
     
+    public static function enableAutomaticUpdates($update, $item) {
+        if ($item->slug == 'neuralquery-soscookies') {
+            return TRUE;
+        }
+        
+        return $update;
+    }
+    
     public static function integrateWithYoastGoogleAnalytics() {
         if (class_exists('Yoast_GA_Tracking')) {
             global $wp_filter;
