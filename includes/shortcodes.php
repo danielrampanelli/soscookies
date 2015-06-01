@@ -5,8 +5,13 @@ class soscookies_shortcodes {
     private static function getTemplate($name) {
         $file = sprintf('%s/../parts/%s.php', dirname(__FILE__), $name);
         
-        if (defined('ICL_LANGUAGE_CODE')) {
-            $localizedFile = sprintf('%s/../parts/%s-%s.php', dirname(__FILE__), $name, ICL_LANGUAGE_CODE);
+        $language = soscookies::option('language');
+        if (empty($language) && defined('ICL_LANGUAGE_CODE')) {
+            $language = ICL_LANGUAGE_CODE;
+        }
+        
+        if (!empty($language)) {
+            $localizedFile = sprintf('%s/../parts/%s-%s.php', dirname(__FILE__), $name, $language);
             if (file_exists($localizedFile)) {
                 $file = $localizedFile;
             }
