@@ -2,6 +2,7 @@
 
 /*
 Setting: soscookies_options
+Tab Order: 10
 */
 
 piklist('field', array(
@@ -12,22 +13,6 @@ piklist('field', array(
         '' => _x('Disabled', 'admin', 'soscookies'),
         'testing' => _x('Testing (Administrators)', 'admin', 'soscookies'),
         'yes' => _x('Enabled (All Users)', 'admin', 'soscookies'),
-	),
-));
-
-piklist('field', array(
-	'type' => 'select',
-	'field' => 'policy',
-	'label' => _x('Policy Page', 'admin', 'soscookies'),
-	'choices' => piklist(
-		array_merge(
-			array(array('ID' => '', 'post_title' => '&mdash;')),
-			get_pages(array(
-				'sort_column' => 'post_date',
-				'sort_order' => 'ASC',
-			))
-		),
-		array('ID', 'post_title')
 	),
 ));
 
