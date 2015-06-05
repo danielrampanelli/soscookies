@@ -1,9 +1,24 @@
 <div class="contains-cookie-policy-disclosure">
-    
-    <h3>Information pursuant to art. 13 of Decree 196/03</h3>
-    <p><span class="contains-cookie-policy-owner"><?php echo $name ?></span> - <span class="contains-cookie-policy-address"><?php echo $address ?></span>, informa, 
-    Cookies collected from this website:</p>
 
+    <h3>COOKIE POLICY</h3>
+    <p>Most websites which you visit will use cookies in order to improve your user experience. They enable websites to «remember» you - either for the duration of your visit (using a «session cookie») or for repeat visits (using a «persistent cookie»).</p>
+    <p>This website sets cookies solely in order to enable or enhance functions or improve the navigation experience for the user. Under no circumstances does this website use cookies to collect, process, disseminate or record personal data. If you prefer, it is possible to block some or all cookies, or even delete cookies which have already been set, but you should be aware that you might lose some functions.</p>
+
+    <h3>HOW TO DISABLE COOKIES IN YOUR BROWSER</h3>
+    
+   <ul>
+        <li><a href="http://windows.microsoft.com/en-US/internet-explorer/delete-manage-cookies#ie=ie-11" target="_blank">Internet Explorer</a></li>
+        <li><a href="http://support.mozilla.org/en-US/kb/Cookies" target="_blank">Firefox</a></li>
+        <li><a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647" target="_blank">Google Chrome</a></li>
+        <li><a href="http://www.opera.com/help/tutorials/security/cookies/" target="_blank">Opera</a></li>
+        <li><a href="https://support.apple.com/kb/PH19214?locale=it_IT&viewlocale=en_US" target="_blank">Safari</a></li>
+        <li><a href="https://support.apple.com/en-us/HT201265" target="_blank">Safari iOS</a></li>
+        <li><a href="http://support.google.com/mobile/bin/answer.py?hl=en&amp;answer=169022" target="_blank">Android</a></li>
+        <li><a href="http://docs.blackberry.com/en/smartphone_users/deliverables/32004/Turn_off_cookies_in_the_browser_60_1072866_11.jsp" target="_blank">Blackberry</a></li>
+        <li><a href="http://www.microsoft.com/windowsphone/en-us/howto/wp7/web/changing-privacy-and-other-browser-settings.aspx" target="_blank">Windows Phone</a></li>
+    </ul>    
+
+    <h3>COOKIES COLLECTED FROM THIS WEBSITE:</h3>
     <h4>Technical Cookie</h4>
     <p>Cookies needed to allow:</p>
     <p>navigation and functionality of website;</p>
@@ -15,34 +30,20 @@
     <p>We may allow third-parties from other providers that need your consent; if not given they will not be installed.</p>
     <p>Any third parties to whom we may disclose personal information may have their own privacy policies which describe how they use and disclose personal information. Those policies will govern use, handling and disclosure of your personal information once we have shared it with those third parties as described in this Privacy Policy. If you want to learn more about their privacy practices, we encourage you to visit the websites of those third parties.</p>
 
-    <?php include(dirname(__FILE__).'/services.php') ?>
+    <?php include(__DIR__.'/services.php') ?>
     
-    <p>You may delete or decline cookies by changing your browser settings. Website services without cookies consent will be compromised.</p>
-    
-    <h4>Privacy settings</h4>
+    <h4>Cookie settings</h4>
     <p>Whenever you want, you can change your privacy settings for this website.</p>
     
     <p>
-        <a class="triggers-cookies-preferences" href="#">PRIVACY SETTINGS</a>
+        <a class="triggers-cookies-preferences" href="#">MANAGE YOUR COOKIES PREFERENCES</a>
+    </p> 
+    <h3>DATA CONTROLLER AND OWNER</h3>
+    <p><span class="contains-cookie-policy-owner"><?php echo $name ?></span> - <span class="contains-cookie-policy-address"><?php echo $address ?></span></p>
+    <p>
+        Since the installation of third party Cookies and other tracking systems through the services used within this Application can not be technically controlled by the Owner, any specific references to Cookies and tracking systems installed by third parties are to be considered indicative. In order to obtain complete information, consult the privacy policy for the respective third party services listed in this document.
     </p>
-    
-    <!-- <p>Ti comunichiamo che, ai sensi dell'art. 7 del Codice Privacy, ti spettano determinati diritti, tra i quali quello di opporti al trattamento. A tal fine, pertanto, potrai modificare la tua scelta in qualsiasi momento accedendo nuovamente alla presente informativa.</p> -->
-    
-    <h3>MANAGE YOUR COOKIES AND SITE DATA</h3>
-    
-    <h4>If you are using Internet Explorer</h4>
-    <p>Go to Tools in the menu bar. Click on Internet Options. Click on the Privacy tab on top. Move the slider up to the "Block all Cookies" button.</p>
-    
-    <h4>If you are using Firefox</h4>
-    <p>Go to Tools in the menu bar. Click on Options. Click on the Privacy tab. Disable the box that says "Accept Cookies From sites".</p>
-    
-    <h4>If you are using Safari</h4>
-    <p>Go to the Safari menu (icon in top right of browser) and select Preferences. In the popup window that appears, select the Security icon (a padlock). Under "Accept Cookies", select the "Never" button.</p>
-    
-    <h4>If you are using Google Chrome</h4>
-    <p>Click on the spanner icon in the top right of the browser. Click on "Options". Click on "Under the Bonnet" (UK) / "Under the Hood" (US). Click on the "Content settings" button in the Privacy section. Ensure that "Allow local data to be set" is selected. Select "Block sites from setting any data".</p>
-    
-    <h4>Other browser</h4>
-    <p>If you use any other browser, look in browser settings how to manage cookies.</p>
-    
+    <p> 
+        Given the objective complexity linked to the identification of technologies based on Cookies and their very close integration with the operation of the web, Users are encouraged to contact the Owner should they wish to receive any further information on the use of Cookies themselves and any possible use of them - for example, by a third party - carried out through this site.
+    </p>
 </div>

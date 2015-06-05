@@ -1,47 +1,49 @@
 <div class="contains-cookie-policy-disclosure">
-    
-    <h3>Informativa ai sensi dell'art. 13 del d.lgs. n. 196/2003 (c.d. codice privacy)</h3>
-    <p><span class="contains-cookie-policy-owner"><?php echo $name ?></span>, con sede in <span class="contains-cookie-policy-address"><?php echo $address ?></span>, informa, ai sensi dell'art. 13 del Codice Privacy ed in ottemperanza alle prescrizioni del Provvedimento 229/2014 del Garante per la Protezione dei Dati Personali, che il presente sito utilizza le seguenti tipologie di cookie (ossia dei piccoli file di testo che i siti visitati inviano al tuo device, dove vengono poi memorizzati al fine di essere ritrasmessi agli stessi siti alla visita successiva):</p>
 
-    <h4>Cookie tecnici</h4>
-    <p>Quei cookie strettamente necessari per permettere:</p>
-    <p>la navigazione e fruizione del sito web;</p>
-    <p>la raccolta di informazioni, in forma aggregata, sul numero degli utenti e su come questi visitano il sito stesso ("cookie analytics");</p>
-    <p>la navigazione in funzione di una serie di criteri selezionati (ad esempio, la lingua, "cookie di funzionalità") al fine di migliorare il servizio reso allo stesso.</p>
-    <p>Tali cookie non vengono utilizzati per scopi ulteriori rispetto a quelli funzionali sopra descritti e pertanto la loro installazione non richiede il tuo consenso.</p>
+    <h3>COOKIE POLICY</h3>
+    <p>Most websites which you visit will use cookies in order to improve your user experience. They enable websites to «remember» you - either for the duration of your visit (using a «session cookie») or for repeat visits (using a «persistent cookie»).</p>
+    <p>This website sets cookies solely in order to enable or enhance functions or improve the navigation experience for the user. Under no circumstances does this website use cookies to collect, process, disseminate or record personal data. If you prefer, it is possible to block some or all cookies, or even delete cookies which have already been set, but you should be aware that you might lose some functions.</p>
 
-    <h4>Cookie di profilazione di terze parti</h4>
-    <p>Tali cookie sono installati da soggetti diversi da <span class="contains-cookie-policy-owner"><?php echo $name ?></span> e l'installazione degli stessi richiede il tuo consenso; in mancanza gli stessi non saranno installati.</p>
-    <p>Ti riportiamo quindi di seguito i link alle informative privacy delle terze parti dove potrai esprimere il tuo consenso all'installazione di tali cookie evidenziando che, laddove non effettuassi alcuna scelta e decidessi di proseguire comunque con la navigazione all'interno del presente sito web, acconsentirai all'uso di tali cookie.</p>
+    <h3>HOW TO DISABLE COOKIES IN YOUR BROWSER</h3>
+    
+   <ul>
+        <li><a href="http://windows.microsoft.com/en-US/internet-explorer/delete-manage-cookies#ie=ie-11" target="_blank">Internet Explorer</a></li>
+        <li><a href="http://support.mozilla.org/en-US/kb/Cookies" target="_blank">Firefox</a></li>
+        <li><a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647" target="_blank">Google Chrome</a></li>
+        <li><a href="http://www.opera.com/help/tutorials/security/cookies/" target="_blank">Opera</a></li>
+        <li><a href="https://support.apple.com/kb/PH19214?locale=it_IT&viewlocale=en_US" target="_blank">Safari</a></li>
+        <li><a href="https://support.apple.com/en-us/HT201265" target="_blank">Safari iOS</a></li>
+        <li><a href="http://support.google.com/mobile/bin/answer.py?hl=en&amp;answer=169022" target="_blank">Android</a></li>
+        <li><a href="http://docs.blackberry.com/en/smartphone_users/deliverables/32004/Turn_off_cookies_in_the_browser_60_1072866_11.jsp" target="_blank">Blackberry</a></li>
+        <li><a href="http://www.microsoft.com/windowsphone/en-us/howto/wp7/web/changing-privacy-and-other-browser-settings.aspx" target="_blank">Windows Phone</a></li>
+    </ul>    
 
-    <?php include(dirname(__FILE__).'/services.php') ?>
+    <h3>COOKIES COLLECTED FROM THIS WEBSITE:</h3>
+    <h4>Technical Cookie</h4>
+    <p>Cookies needed to allow:</p>
+    <p>navigation and functionality of website;</p>
+    <p>informations collections of number of users and how do they and how they visit the website ("analytics cookies");</p>
+    <p>browsing function selected criteria (e.g. language, "functionalities cookies") to improve user experience.</p>
+    <p>These cookies are not used for purposes other than those described above and therefore their installation does not require your consent.</p>
+
+    <h4>Information collected by third-parties</h4>
+    <p>We may allow third-parties from other providers that need your consent; if not given they will not be installed.</p>
+    <p>Any third parties to whom we may disclose personal information may have their own privacy policies which describe how they use and disclose personal information. Those policies will govern use, handling and disclosure of your personal information once we have shared it with those third parties as described in this Privacy Policy. If you want to learn more about their privacy practices, we encourage you to visit the websites of those third parties.</p>
+
+    <?php include(__DIR__.'/services.php') ?>
     
-    <p>In aggiunta a quanto sopra esposto, potrai comunque impostare il tuo browser in maniera da rifiutare automaticamente la ricezione dei cookie attivando l'apposita opzione: il mancato utilizzo dei cookie tecnici, tuttavia, potrebbe comportare difficoltà nell'interazione con il presente sito.</p>
-    
-    <h4>Preferenze privacy</h4>
-    <p>In qualsiasi momento puoi rivedere le impostazioni della privacy per questo sito.</p>
+    <h4>Cookie settings</h4>
+    <p>Whenever you want, you can change your privacy settings for this website.</p>
     
     <p>
-        <a class="triggers-cookies-preferences" href="#">IMPOSTAZIONI PRIVACY</a>
+        <a class="triggers-cookies-preferences" href="#">MANAGE YOUR COOKIES PREFERENCES</a>
+    </p> 
+    <h3>DATA CONTROLLER AND OWNER</h3>
+    <p><span class="contains-cookie-policy-owner"><?php echo $name ?></span> - <span class="contains-cookie-policy-address"><?php echo $address ?></span></p>
+    <p>
+        Since the installation of third party Cookies and other tracking systems through the services used within this Application can not be technically controlled by the Owner, any specific references to Cookies and tracking systems installed by third parties are to be considered indicative. In order to obtain complete information, consult the privacy policy for the respective third party services listed in this document.
     </p>
-    
-    <p>Ti comunichiamo che, ai sensi dell'art. 7 del Codice Privacy, ti spettano determinati diritti, tra i quali quello di opporti al trattamento. A tal fine, pertanto, potrai modificare la tua scelta in qualsiasi momento accedendo nuovamente alla presente informativa.</p>
-    
-    <h3>ISTRUZIONI DISABILITAZIONE COOKIES DAI BROWSERS</h3>
-    
-    <h4>Se si utilizza Internet Explorer</h4>
-    <p>In Internet Explorer, fare clic su "Strumenti" poi "Opzioni Internet". Nella scheda Privacy, spostare il cursore verso l'alto per bloccare tutti i cookie o verso il basso per consentire a tutti i cookie, e quindi fare clic su OK.</p>
-    
-    <h4>Se si utilizza il browser Firefox</h4>
-    <p>Vai al menu "Strumenti" del browser e selezionare il menu "Opzioni" Fare clic sulla scheda "Privacy", deselezionare la casella "Accetta cookie" e fare clic su OK.</p>
-    
-    <h4>Se si utilizza il browser Safari</h4>
-    <p>In Browser della votazione, selezionare il menu "Modifica" e selezionare "Preferences". Clicca su "Privacy". Posizionare l'impostazione "cookies Block" sempre "e fare clic su OK.</p>
-    
-    <h4>Se si utilizza il browser Google Chrome</h4>
-    <p>Fai clic sul menu Chrome nella barra degli strumenti del browser. Selezionare "Impostazioni". Fare clic su "Mostra impostazioni avanzate". Nella sezione "Privacy", fai clic sul pulsante "Impostazioni contenuti". Nella sezione "Cookies", selezionare "Non consentire ai siti per memorizzare i dati" e di controllo "cookie di blocco e di terze parti i dati sito", e quindi fare clic su OK.</p>
-    
-    <h4>Altri browser</h4>
-    <p>Se usi un qualsiasi altro browser, cerca nelle Impostazioni del browser la modalità di gestione dei cookies.</p>
-    
+    <p> 
+        Given the objective complexity linked to the identification of technologies based on Cookies and their very close integration with the operation of the web, Users are encouraged to contact the Owner should they wish to receive any further information on the use of Cookies themselves and any possible use of them - for example, by a third party - carried out through this site.
+    </p>
 </div>
