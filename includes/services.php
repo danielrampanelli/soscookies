@@ -58,6 +58,13 @@ class soscookies_services {
                         'https://www.linkedin.com/legal/cookie-policy?trk=hb_ft_cookie',
                     ),
                 ),
+                'googlefonts' => array(
+                    'name' => 'Google Fonts',
+                    'description' => _x('Directory of free hosted application programming interfaces for web fonts', 'services', 'soscookies'),
+                    'urls' => array(
+                        'http://www.google.com/policies/privacy/',
+                    ),
+                ),
                 'addthis' => array(
                     'name' => 'Add This',
                     'description' => _x('Social media sharing', 'services', 'soscookies'),
