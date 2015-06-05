@@ -247,7 +247,7 @@ CORE STYLES
 	height: 32px;
 	position: absolute;
  	right: 20px;
-	bottom: 10px;
+	bottom: 30px;
 
 }
 
@@ -776,7 +776,7 @@ DARK STYLE
 	margin: 0 0 10px 30px !important;
 	padding: 6px 0 0 !important;
 	list-style: none !important;
-	width: 440px !important;
+	width: 740px !important;
 	color: #9a9a9a !important;
 	-webkit-transition:color 0.2s ease-in;
 	-moz-transition:color 0.2s ease-in;
@@ -788,7 +788,7 @@ DARK STYLE
 
 #cc-notification #cc-notification-permissions li label
 {
-	font-size: 12pt !important;
+	font-size: 11pt !important;
 	line-height: 1.3em;
 	color: #9a9a9a !important;
 	-webkit-transition:color 0.2s ease-in;
@@ -878,16 +878,17 @@ DARK STYLE
 #cc-notification h2 span,
 #cc-notification h2
 {
-	font-size: 14pt;
+	font-size: 12pt;
 	letter-spacing: -0.05em;
 	margin-bottom: 20px !important;
 	font-weight: 400 !important;
+	line-height: 130%;
 }
 
 #cc-notification h2 a
 {
 	letter-spacing: -0.05em;
-	font-size: 14pt;
+	font-size: 12pt!important;
 }
 
 #cc-notification h3
@@ -919,7 +920,7 @@ DARK STYLE
 #cc-notification ul.cc-notification-buttons li a,
 #cc-notification ul.cc-notification-buttons li a:visited
 {
-	margin-top: 8px !important;
+	margin-top: 12px !important;
 	margin-bottom: 6px !important;
 	display: block;
 	padding: 8px 16px !important;
@@ -931,9 +932,9 @@ DARK STYLE
 	font-weight: 600;
 	letter-spacing: -0.05em;
 
-	border-radius: 5px !important;
+	/*border-radius: 5px !important;
 	-moz-border-radius: 5px !important;
-	-webkit-border-radius: 5px !important;
+	-webkit-border-radius: 5px !important;*/
 
 	/*box-shadow:1px 1px 2px #000;*/
 	/*-moz-box-shadow:1px 1px 2px #000;*/
