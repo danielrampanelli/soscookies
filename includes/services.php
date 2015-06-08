@@ -114,6 +114,21 @@ class soscookies_services {
                         'http://www.ilmeteo.it/portale/privacy',
                     ),
                 ),
+                'meteotrentino' => array(
+                    'name' => 'meteotrentino.it',
+                    'description' => _x('Weather forecasting service.', 'services', 'soscookies'),
+                    'urls' => array(
+                        'http://www.provincia.tn.it/privacy/',
+                    ),
+                ),
+
+                'meteobolzano' => array(
+                    'name' => 'provincia.bz.it/meteo',
+                    'description' => _x('Weather forecasting service.', 'services', 'soscookies'),
+                    'urls' => array(
+                        'http://www.provincia.bz.it/it/privacy.asp',
+                    ),
+                ),
             );
         }
         
