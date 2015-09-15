@@ -4,7 +4,7 @@
 Plugin Name: SOS Cookies
 Plugin URI: http://github.com/neuralquery/soscookies
 Description: SOS Cookies
-Version: 1.0.4
+Version: 1.1.0
 Author: Daniel Rampanelli
 Author URI: http://danielrampanelli.com
 Text Domain: soscookies
