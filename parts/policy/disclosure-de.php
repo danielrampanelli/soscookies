@@ -1,8 +1,8 @@
 <div class="contains-cookie-policy-disclosure">
     
     <script>
-        function customizeSosCookiesOptions() {
-            soscookies.consentUsersBasedOnTheirScrollingActivity(false);
+        function consentUsersBasedOnTheirScrollingActivity() {
+            return false;
         }
     </script>
 

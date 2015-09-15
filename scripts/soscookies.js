@@ -6,13 +6,6 @@
         strings: soscookies.strings
     });
     
-    window['soscookies'] = {
-        _consentUsersByScrolling: true,
-        consentUsersBasedOnTheirScrollingActivity: function(enabled) {
-            soscookies._consentUsersByScrolling = enabled;
-        }
-    };
-    
     $(document).on('click', '.triggers-cookies-preferences', function(e) {
         e.preventDefault();
         
@@ -24,19 +17,19 @@
     });
     
     $(document).on('ready', function(e) {
+        var consentUsersByScrolling = true;
         var scrollHandler;
         var clickHandler;
         
-        if (!!window['customizeSosCookiesOptions']) {
-            customizeSosCookiesOptions();
+        if (!!window['consentUsersBasedOnTheirScrollingActivity']) {
+            consentUsersByScrolling = consentUsersBasedOnTheirScrollingActivity();
         }
         
         setTimeout(function() {
-            if (soscookies._consentUsersByScrolling) {
+            if (consentUsersByScrolling) {
                 scrollHandler = $(window).on('scroll', function(e) {
                     if ($(window).scrollTop() > (($(window).height() / 4.0) * 3.0)) {
                         cc.onconsentgivenbyinteraction();
-                        
                         $(window).off('scroll', scrollHandler);
                         scrollHandler = null;
                     }
