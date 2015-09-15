@@ -2,7 +2,9 @@
 ;(function($) {
     cc.initialise({
         cookies: soscookies.cookies,
-        settings: soscookies.settings,
+        settings: $.extend(soscookies.settings, {
+            privacyPolicyLinkTarget: '_blank'
+        }),
         strings: soscookies.strings
     });
     

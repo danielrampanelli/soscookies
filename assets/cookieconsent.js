@@ -588,7 +588,7 @@ var cc =
             {
                 jQuery('ul.cc-notification-buttons').append(
                     '<li>' +
-                        '<a class="cc-link" href="' + cc.settings.privacyPolicy + '" id="cc-privacy-policy">' + cc.strings.privacyPolicy + '</a>' +
+                        '<a class="cc-link" href="' + cc.settings.privacyPolicy + '" target="' + cc.settings.privacyPolicyLinkTarget +'" id="cc-privacy-policy">' + cc.strings.privacyPolicy + '</a>' +
                     '</li>'
                 );
             }
