@@ -1,4 +1,10 @@
 <div class="contains-cookie-policy-disclosure">
+    
+    <script>
+        function customizeSosCookiesOptions() {
+            soscookies.consentUsersBasedOnTheirScrollingActivity(false);
+        }
+    </script>
 
     <h3>COOKIE POLICY</h3>
     <p>Most websites which you visit will use cookies in order to improve your user experience. They enable websites to «remember» you - either for the duration of your visit (using a «session cookie») or for repeat visits (using a «persistent cookie»).</p>

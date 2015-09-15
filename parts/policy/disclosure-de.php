@@ -1,4 +1,10 @@
 <div class="contains-cookie-policy-disclosure">
+    
+    <script>
+        function customizeSosCookiesOptions() {
+            soscookies.consentUsersBasedOnTheirScrollingActivity(false);
+        }
+    </script>
 
     <h3>COOKIES UND DATENSCHUTZ</h3>
     <p>Die meisten Websites, die Sie besuchen, verwenden Cookies zur Verbesserung des Nutzererlebnisses. Durch diese Cookies kann sich die Website an Sie „erinnern“, sowohl während Ihres Besuchs der Website (mithilfe eines „Session-Cookies“) als auch bei wiederholten Besuchen (mithilfe eines „dauerhaften Cookies“).</p>

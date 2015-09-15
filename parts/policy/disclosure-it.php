@@ -1,4 +1,10 @@
 <div class="contains-cookie-policy-disclosure">
+    
+    <script>
+        function customizeSosCookiesOptions() {
+            soscookies.consentUsersBasedOnTheirScrollingActivity(false);
+        }
+    </script>
 
     <h3>INFORMATIVA ESTESA SUI COOKIE</h3>
     <p>I cookies sono piccoli file di testo che vengono automaticamente posizionati sul PC del navigatore all'interno del browser. Essi contengono informazioni di base sulla navigazione in Internet e grazie al browser vengono riconosciuti ogni volta che l'utente visita il sito.</p>
