@@ -4,6 +4,10 @@
         function consentUsersBasedOnTheirScrollingActivity() {
             return false;
         }
+        
+        function showCookiePolicyPageLink() {
+            return false;
+        }
     </script>
 
     <h3>COOKIE POLICY</h3>

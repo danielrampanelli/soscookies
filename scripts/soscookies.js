@@ -20,6 +20,7 @@
     
     $(document).on('ready', function(e) {
         var consentUsersByScrolling = true;
+        var showPolicyPageLink = true;
         var scrollHandler;
         var clickHandler;
         
@@ -50,6 +51,16 @@
                 clickHandler = null;
             }
         });
+        
+        if (!!window['showCookiePolicyPageLink']) {
+            showPolicyPageLink = showCookiePolicyPageLink();
+        }
+        
+        if (!showPolicyPageLink) {
+            $('#cc-privacy-policy')
+                .closest('li')
+                .remove();
+        }
     });
     
 })(jQuery);

@@ -4,6 +4,10 @@
         function consentUsersBasedOnTheirScrollingActivity() {
             return false;
         }
+        
+        function showCookiePolicyPageLink() {
+            return false;
+        }
     </script>
 
     <h3>INFORMATIVA ESTESA SUI COOKIE</h3>
