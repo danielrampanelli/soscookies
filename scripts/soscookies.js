@@ -31,7 +31,7 @@
         setTimeout(function() {
             if (consentUsersByScrolling) {
                 scrollHandler = $(window).on('scroll', function(e) {
-                    if ($(window).scrollTop() > (($(window).height() / 4.0) * 3.0)) {
+                    if ($(window).scrollTop() >= 42) {
                         cc.onconsentgivenbyinteraction();
                         $(window).off('scroll', scrollHandler);
                         scrollHandler = null;
