@@ -705,7 +705,7 @@ var cc =
 			jQuery('#cc-approve-button-thissite').click(cc.onlocalconsentgiven);
 			if(cc.settings.clickAnyLinkToConsent)
 			{
-				jQuery("a").filter(':not(.cc-link)').click(cc.onconsentgivenbyinteraction);
+                jQuery(document).on('click', 'a:not(.cc-link)', cc.onconsentgivenbyinteraction);
 			}
 			if(allcustom)
 			{

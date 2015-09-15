@@ -25,6 +25,7 @@
     
     $(document).on('ready', function(e) {
         var scrollHandler;
+        var clickHandler;
         
         if (!!window['customizeSosCookiesOptions']) {
             customizeSosCookiesOptions();
@@ -42,6 +43,18 @@
                 });
             }
         }, 500);
+        
+        $('.contains-cookie-policy-disclosure *:link').each(function() {
+            $(this).addClass('cc-link');
+        });
+        
+        clickHandler = $(document).on('click', function(e) {
+            if ($(e.srcElement).closest('.contains-cookie-policy-disclosure').length == 0) {
+                cc.onconsentgivenbyinteraction();
+                $(document).off('click', clickHandler);
+                clickHandler = null;
+            }
+        });
     });
     
 })(jQuery);
