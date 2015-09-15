@@ -44,7 +44,7 @@
         });
         
         clickHandler = $(document).on('click', function(e) {
-            if ($(e.srcElement).closest('.contains-cookie-policy-disclosure').length == 0) {
+            if ($(e.srcElement).closest('.cc-link, .contains-cookie-policy-disclosure').length == 0) {
                 cc.onconsentgivenbyinteraction();
                 $(document).off('click', clickHandler);
                 clickHandler = null;
