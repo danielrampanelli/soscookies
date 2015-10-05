@@ -8,6 +8,18 @@
         strings: soscookies.strings
     });
     
+    function consentHasBeenSomehowGiven() {
+        var somethingWasApproved = false;
+        
+        $.each(cc.cookies, function(name, value) {
+            if (value.asked) {
+                somethingWasApproved = true;
+            }
+        });
+        
+        return somethingWasApproved;
+    }
+    
     $(document).on('click', '.triggers-cookies-preferences', function(e) {
         e.preventDefault();
         
@@ -29,10 +41,13 @@
         }
         
         setTimeout(function() {
-            if (consentUsersByScrolling) {
+            if (!consentHasBeenSomehowGiven() && consentUsersByScrolling) {
                 scrollHandler = $(window).on('scroll', function(e) {
                     if ($(window).scrollTop() >= 42) {
-                        cc.onconsentgivenbyinteraction();
+                        if (!consentHasBeenSomehowGiven()) {
+                            cc.onconsentgivenbyinteraction();
+                        }
+                        
                         $(window).off('scroll', scrollHandler);
                         scrollHandler = null;
                     }
@@ -44,13 +59,20 @@
             $(this).addClass('cc-link');
         });
         
-        clickHandler = $(document).on('click', function(e) {
-            if ($(e.target).closest('.cc-link, #cc-notification, .contains-cookie-policy-disclosure').length == 0) {
-                cc.onconsentgivenbyinteraction();
-                $(document).off('click', clickHandler);
-                clickHandler = null;
-            }
-        });
+        if (!consentHasBeenSomehowGiven()) {
+            setTimeout(function() {
+                clickHandler = $(document).on('click', function(e) {
+                    if ($(e.target).closest('.cc-link, #cc-notification, .contains-cookie-policy-disclosure').length == 0) {
+                        if (!consentHasBeenSomehowGiven()) {
+                            cc.onconsentgivenbyinteraction();
+                        }
+                    
+                        $(document).off('click', clickHandler);
+                        clickHandler = null;
+                    }
+                });
+            }, 500);
+        }
         
         if (!!window['showCookiePolicyPageLink']) {
             showPolicyPageLink = showCookiePolicyPageLink();
